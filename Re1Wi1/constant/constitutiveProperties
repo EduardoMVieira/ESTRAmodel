@@ -22,10 +22,11 @@ parameters
                 etaP             etaP [1 -1 -1 0 0 0 0] .99;             
                 lambda           lambda [0 0 1 0 0 0 0] 1.;
                 L2               L2 [0 0 0 0 0 0 0] 100;
-                gamma            gamma [0 0 0 0 0 0 0] 1.; //JUST AN INTIAL VALUE
-                tau0             tau0 [1 -1 -2 0 0 0 0] 3.5;
-                breakingintervaltest breakingintervaltest [0 0 0 0 0 0 0] 1;
-                solveInTau       false; 
+
+                gamma            1.0; // initial guess
+                tau0             3.5;
+
+                breakingInterval 1; 
                
                 stabilization    coupling;              
 }
